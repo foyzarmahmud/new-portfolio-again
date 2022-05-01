@@ -69,7 +69,6 @@ section .profile{
 }
 
 .left-side{
-    background-color: red;
     padding-top: 0;
 }
 .left-side .content h3{
