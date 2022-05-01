@@ -1,0 +1,478 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap'); */
+
+*{
+    box-sizing: border-box;
+    font-family:'Fira Sans', sans-serif
+}
+
+body{
+    margin: 0;
+     /* font-family: 'Fira Sans', sans-serif;
+    
+    font-family: 'Satisfy', cursive; */
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+}
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.dotted-hr{
+    border: dotted 5px #fff;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile */
+
+[class*="col-"]{
+    width: 100%;
+}
+.navbar{
+    background-color: #40868b ;
+    padding: 1% 7%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.navbar h1{
+    color: #fff;
+    margin: 0;
+    padding-top: 10px;
+}
+.nav-logo img{
+    width: 120px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+}
+.navbar-menu a{
+    background-color: #0c6168;
+    border-radius: 10px;
+    margin: 7px 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.navbar-menu a:hover{
+    background-color: gray;
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* profile section starts here */
+
+/* div#profile{
+    padding: 40px 0;
+} */
+ .left-side{
+     width: 100%;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .left-side .content h3{
+     color:#333;
+     font-size: 1.5rem;
+     margin-left: 2.4rem;
+ }
+ .left-side .content h1.header{
+     color: #333;
+     font-size: 2.7rem;
+     margin-top: 1.2rem;
+ }
+ .left-side .content h1{
+     color: #0c6168;
+ }
+ .left-side .content .typing-content span{
+    color: green;
+ }
+ .left-side .buttons{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin: 7px;
+ }
+ .left-side .buttons a.button{
+     margin-left: 9.5rem;
+ }
+.left-side .buttons a{
+    color: #0c6168;
+    background-color: orangered;
+    justify-content:center;
+    width: 35%;
+    margin: 10px;
+    padding: 12px;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    transition: 0.3s ease;
+}
+.left-side .buttons a:hover{
+    background-color:#0c6168;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+ .right-side{
+     width: 100%;
+     margin-bottom: -14px;
+     /* background-color: red; */
+ }
+ .right-side img {
+    margin-left: 7rem;
+    height: 345px;
+    margin-top: 30px;
+}
+
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.another{
+    background-color: green;
+    height: 130px;
+}
+
+/* profile section ends here */
+
+/* about me section start here */
+
+.about-me{
+    background-color: #39a4ac;
+    padding: 1% 7%;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.aboutme-image img{
+    border: 5px solid #fff;
+    border-radius: 50%;
+    height: 220px;
+    width: 200px;
+}
+.about-me p{
+    text-align: center;
+}
+.about-me a{
+    text-transform:lowercase;
+    font-weight: 0;
+    font-size: 16px;
+}
+.cv-button{
+    background-color: #052d2f;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    transition: 0.4s ease;
+}
+.cv-button:hover{
+    background-color:orangered;
+}
+.about-me::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* about me section end here */
+
+/* professional experience start here */
+.professional-experience{
+    padding: 1% 0;
+}
+
+.card{
+    background-color: #a39e9e;
+    border-radius: 6px;
+    padding: 10px;
+    height: 700px;
+    transition: 0.3s ease;
+}
+.card:hover{
+    box-shadow: 0 4px 8px 5px black;
+}
+.card-icon{
+    width: 85px;
+    margin: 0 auto;
+}
+.card-icon img{
+    width: 100%;
+    margin-top: 35px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.card-header{
+    background-color: #616161;
+    color: white;
+}
+.card-header h2{
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.progresbar-container{
+    padding-right: 15px;
+}
+.progresbar-container li{
+    list-style: none;
+    text-transform: uppercase;
+    text-shadow: 600;
+    margin: 35px 5px;
+    position: relative;
+}
+.progresbar-container li::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 9px;
+    left: 0;
+    top:calc(100% + 7px);
+    background-color:rgb(86,86,153,.8);
+    border-radius: 1000px;
+}
+.progresbar-container li.html::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 9px;
+    left: 0;
+    top:calc(100% + 7px);
+    background-color:#0c6185;
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.progresbar-container li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+
+.progresbar-container li.css::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 9px;
+    left: 0;
+    top:calc(100% + 7px);
+    background-color:black;
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.progresbar-container li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 90%;
+    }
+}
+.progresbar-container li.react::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 9px;
+    left: 0;
+    top:calc(100% + 7px);
+    background-color:green;
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.progresbar-container li.nodejs::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 9px;
+    left: 0;
+    top:calc(100% + 7px);
+    background-color:blueviolet;
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.progresbar-container li.nodejs::after{
+    animation-name: nodejs;
+}
+@keyframes nodejs{
+    to{
+        width: 60%;
+    }
+}
+
+.progresbar-container li.mongodb::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 9px;
+    left: 0;
+    top:calc(100% + 7px);
+    background-color:#4fd;
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.progresbar-container li.mongodb::after{
+    animation-name: mongodb;
+}
+@keyframes mongodb{
+    to{
+        width: 45%;
+    }
+}
+
+.progresbar-container li.github::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 9px;
+    left: 0;
+    top:calc(100% + 7px);
+    background-color:rgba(168, 211, 11, 0.867);
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.progresbar-container li.github::after{
+    animation-name: github;
+}
+@keyframes github{
+    to{
+        width: 75%;
+    }
+}
+
+.progresbar-container li.react::after{
+    animation-name: react;
+}
+@keyframes react{
+    to{
+        width: 60%;
+    }
+}
+
+
+.progresbar-container li.bootstrape::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 9px;
+    left: 0;
+    top:calc(100% + 7px);
+    background-color:oranged;
+    border-radius: 1000px;
+    background-color: orangered;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.progresbar-container li.bootstrape::after{
+    animation-name: bootstrape;
+}
+@keyframes bootstrape{
+    to{
+        width: 75%;
+    }
+}
+
+
+.progresbar-container li.javascript::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 9px;
+    left: 0;
+    top:calc(100% + 7px);
+    background-color:#052d2f;
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.progresbar-container li.javascript::after{
+    animation-name: javascript;
+}
+@keyframes javascript{
+    to{
+        width: 70%;
+    }
+}
+
+.professional-experience::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* professional experience end here */
+
+
+/* contact section starts from here */
+
+
+/* contact section ends from here */

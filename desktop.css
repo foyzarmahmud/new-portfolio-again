@@ -1,0 +1,301 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap'); */
+
+    /* font-family: 'Fira Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Satisfy', cursive;
+*/
+
+/* for desktop */
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* for navigation */
+.navbar{
+    flex-direction: row;
+    justify-content: center;
+    height: 20vh;
+}
+.nav-logo{
+    text-align: left;
+}
+.nav-heading h1{
+    text-align: right;
+}
+.navbar-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar-menu a {
+    background: none;
+    position: relative;
+    margin: 7px;
+    padding: 5px;
+}
+.navbar-menu a::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background:orange;
+    height: 3px;
+    transition: 0.5s;
+}
+.navbar-menu a:hover::before{
+    width: 100%;
+}
+.navbar-menu a:hover{
+    background: none;
+}
+.navbar {
+    align-items: center;
+}
+/* profile section start here */
+section .profile{
+    margin-top: 6rem;
+    /* padding-bottom: 5rem; */
+}
+
+.left-side{
+    background-color: red;
+    padding-top: 0;
+}
+.left-side .content h3{
+    color:#333;
+    font-size: 1.8rem;
+    margin-left: 6.4rem;
+}
+.left-side .content h1.header{
+    color: #333;
+    font-size: 3rem;
+    margin-top: 1.2rem;
+}
+
+.left-side .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 7px;
+}
+.left-side .buttons a{
+    width: 25%;
+    margin: 0 15px;
+}
+.left-side .buttons a.button {
+    margin-left:30px;
+}
+/* .right-side{
+    margin-top: -50px;
+} */
+.right-side img {
+    margin-left: 8rem;
+    height: 375px;
+    width: 270px;
+    margin-top: 30px;
+}
+
+/* profile section end here */
+
+/* about me design here */
+.aboutme-image{
+    margin-top: 100px;
+}
+.aboutme-image img{
+    height: 270px;
+    width: 250px;
+}
+.aboutme-desc p{
+    text-align: left;
+}
+
+/* about me end here */
+
+/* contact section starts from here */
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #095a55;
+    position: relative;
+}
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff38e;
+}
+.container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+  z-index: 1000;
+}
+.container .contactInfo{
+    position: absolute;
+    top: 40px;
+    width:350px;
+    height: calc(100% - 80px);
+    background: #095a55;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.15);
+}
+.container .contactInfo h2{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+}
+.container .contactInfo ul .info{
+    position: relative;
+    margin: 20px 0;
+}
+.container .contactInfo ul.info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+.container .contactInfo ul.info li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+.container .contactInfo ul.info li span:nth-child(1) img{
+    max-width: 100%;
+    filter: invert(1);
+}
+.container .contactInfo ul.info li span:nth-child(2){
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+}
+.container .contactInfo ul.sci{
+    position: relative;
+    display: flex;
+}
+.container .contactInfo ul.sci li{
+    list-style: none;
+    margin-left: 15px;
+}
+.container .contactInfo ul.sci li a{
+    text-decoration: none;
+}
+.container .contactInfo ul.sci li a img{
+    filter: invert(1);
+    transition: 0.2s ease;
+
+}
+.container .contactInfo ul.sci li a img:hover{
+   transform: scale(1.2);}
+   
+  
+.container .contactForm{
+    position: absolute;
+    padding: 70px 50px ;
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100% - 150px);
+    height: 100%;
+    background:#fff;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.25);
+}
+.container .contactForm h2{
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+}
+.container .contactForm .formBox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.container .contactForm .formBox .inputBox{
+    position: relative;
+    margin-bottom: 35px;
+}
+.container .contactForm .formBox .inputBox.w50{
+    width: 47%;
+}
+.container .contactForm .formBox .inputBox.w100{
+    width: 100%;
+}
+.container .contactForm .formBox .inputBox input,
+.container .contactForm .formBox .inputBox textarea{
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #777;
+}
+.container .contactForm .formBox .inputBox textarea{
+    height: 120px;
+}
+.container .contactForm .formBox .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s; 
+}
+.container .contactForm .formBox .inputBox input:focus ~ span,
+.container .contactForm .formBox .inputBox input:valid ~ span,
+.container .contactForm .formBox .inputBox textarea:focus ~ span,
+.container .contactForm .formBox .inputBox textarea:valid ~ span{
+    transform:translateY(-20px) ;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #095a55;
+    font-weight: 500;
+}
+.container .contactForm .formBox .inputBox input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background: #095a55;
+    color: #fff;
+    border:none;
+    max-width: 150px;
+    padding: 12px;
+    text-transform:capitalize;
+    font-weight: 500;
+    font-size: 22px;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+.container .contactForm .formBox .inputBox input[type="submit"]:hover{
+    background: #0d948b;
+}
+/* contact section ends from here */
