@@ -306,5 +306,11 @@ section::before{
 /* achievment section end here */
 
 /* footer section starts here */
-
+.footer-menu{
+    margin-top: 12px;
+}
+.footer a{
+    display: inline;
+    margin: 10px;
+}
 /* footer section end here */

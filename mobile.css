@@ -509,5 +509,23 @@ a{
 
 /* footer section starts here */
 
-
+.footer{
+    background-color:black;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
+}
+.footer-menu a{
+    display: block;
+    padding: 5px;
+}
+.footer-desc{
+    font-size: 1rem;
+}
+.footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
 /* footer section end here */
