@@ -217,7 +217,7 @@ a{
     background-color: #a39e9e;
     border-radius: 6px;
     padding: 10px;
-    height: 700px;
+    /* height: 700px; */
     transition: 0.3s ease;
 }
 .card:hover{
@@ -472,7 +472,60 @@ a{
 /* professional experience end here */
 
 
-/* contact section starts from here */
+/* achievment-connect-link section starts from here */
+
+.achievment-connect-link{
+    padding: 1% 7%;
+    background-color: #39a4ac;
+    color: #fff;
+}
+
+.contact-links{
+    text-align: center;
+}
+.media-buttons .btn{
+    border: none;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 50px;
+    font-size: 25px;
+    transition: 0.2s ease;
+}
+.btn:hover{
+    background: gray;
+}
 
 
-/* contact section ends from here */
+
+.achievment-connect-link{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+/* achievment-connect-link section ends from here */
+
+/* footer section starts here */
+
+.footer{
+    background-color:black;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
+}
+.footer-menu a{
+    display: block;
+    padding: 5px;
+}
+.footer-desc{
+    font-size: 1rem;
+}
+.footer::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* footer section end here */
